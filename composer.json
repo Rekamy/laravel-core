@@ -1,0 +1,35 @@
+{
+    "name": "rekamy/laravel-core",
+    "description": "Opiniated Laravel override & structure",
+    "type": "library",
+    "license": "Apache License 2.0",
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^10.0"
+    },
+    "require-dev": {},
+    "suggest": {
+        "prettus/l5-repository": "Needed for using repository patterns",
+        "laravel/passport": "Needed for authentication and authorization",
+        "spatie/laravel-permission": "Needed for granular authorization control",
+        "darkaonline/l5-swagger": "Needed to provide swagger api documentation"
+    },
+    "authors": [
+        {
+            "name": "Zahrin Azam",
+            "email": "zahrin.azam@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rekamy\\LaravelCore\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rekamy\\LaravelCore\\LaravelCoreServiceProvider"
+            ]
+        }
+    }
+}
